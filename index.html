@@ -17,6 +17,7 @@
                         warm: {
                             50: '#fdf8f6',
                             100: '#f2e8e5',
+                            200: '#e5d3cd',
                             500: '#8c6b5d',
                             700: '#5a463d',
                             900: '#3a2d27',
@@ -49,6 +50,7 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#about" class="text-gray-600 hover:text-warm-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">關於牧師</a>
+                        <a href="#resume" class="text-gray-600 hover:text-warm-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">牧師履歷</a>
                         <a href="#articles" class="text-gray-600 hover:text-warm-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">文章與報導</a>
                     </div>
                 </div>
@@ -66,32 +68,212 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-warm-700 hover:bg-warm-50">關於牧師</a>
+                <a href="#resume" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-warm-700 hover:bg-warm-50">牧師履歷</a>
                 <a href="#articles" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-warm-700 hover:bg-warm-50">文章與報導</a>
             </div>
         </div>
     </nav>
 
     <!-- 主視覺與簡介 (Hero & About) -->
-    <section id="about" class="pt-28 pb-16 md:pt-36 md:pb-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+    <section id="about" class="pt-28 pb-12 md:pt-36 md:pb-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-warm-100">
             <div class="md:flex">
-                <div class="md:flex-shrink-0 bg-warm-100 md:w-1/3 flex items-center justify-center p-8">
-                    <!-- 使用圓形漸層作為頭像替代方案，維持溫暖專業感 -->
-                  <div class="w-40 h-40 rounded-full bg-[#6B5344] flex items-center justify-center text-white text-5xl font-bold shadow-md overflow-hidden">
-  <img src="PIC.png" alt="陳嘉宏牧師" class="w-full h-full object-cover">
-</div>
+                <div class="md:flex-shrink-0 bg-warm-100 md:w-1/3 flex flex-col items-center justify-center p-8 text-center">
+                    <div class="w-40 h-40 rounded-full bg-[#6B5344] flex items-center justify-center text-white text-5xl font-bold shadow-md overflow-hidden mb-4 border-4 border-white">
+                        <img src="PIC.png" alt="陳嘉宏牧師" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-sm font-medium text-warm-700 tracking-widest">Tân Ka-hông</span>
+                    <span class="mt-2 inline-block px-3 py-1 bg-white/80 text-warm-900 text-xs font-semibold rounded-full shadow-sm">
+                        台南後甲基督長老教會 教育牧師
+                    </span>
                 </div>
-                <div class="p-8 md:p-12 flex flex-col justify-center">
+                <div class="p-8 md:p-12 flex flex-col justify-center md:w-2/3">
                     <div class="uppercase tracking-wide text-sm text-warm-500 font-semibold mb-1">About</div>
-                    <h1 class="block mt-1 text-3xl leading-tight font-bold text-gray-900 mb-4">陳嘉宏 牧師</h1>
-                    <p class="mt-2 text-gray-600 text-lg leading-relaxed">
-                        具備資訊工程與軟體工程背景，致力於將新科技（如 AI 人工智慧）、數位工具與實體互動教具融入教會牧養與青年教育中。專長包含互動課程設計、營會活動規劃，以及運用科技進行信仰文化的詮釋與實踐。
+                    <h1 class="block mt-1 text-3xl leading-tight font-bold text-gray-900 mb-3">陳嘉宏 牧師</h1>
+                    <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                        具備資訊工程與軟體工程背景，致力於將新科技（如 AI 人工智慧）、數位工具與實體互動教具融入教會牧養與青年教育中。立志成為一個既能守住真理核心，又能用現代語言與世代對話的牧者。
                     </p>
-                    <div class="mt-6 flex flex-wrap gap-2">
-                        <span class="px-3 py-1 rounded-full text-sm font-medium bg-warm-50 text-warm-700 border border-warm-100">科技牧養</span>
-                        <span class="px-3 py-1 rounded-full text-sm font-medium bg-warm-50 text-warm-700 border border-warm-100">AI 人工智慧</span>
-                        <span class="px-3 py-1 rounded-full text-sm font-medium bg-warm-50 text-warm-700 border border-warm-100">互動課程設計</span>
-                        <span class="px-3 py-1 rounded-full text-sm font-medium bg-warm-50 text-warm-700 border border-warm-100">青年教育</span>
+
+                    <!-- 事奉異象 -->
+                    <div class="mt-5 p-4 bg-warm-50 rounded-2xl border border-warm-100">
+                        <span class="text-xs font-bold text-warm-700 uppercase tracking-wider block mb-1">事奉異象</span>
+                        <p class="text-sm md:text-base font-medium text-warm-900">
+                            真理扎根、科技賦能、世代橋樑、門徒造就、家庭祭壇、關係連結
+                        </p>
+                    </div>
+
+                    <!-- 基本聯絡資訊 -->
+                    <div class="mt-6 pt-5 border-t border-gray-100 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
+                        <div class="flex items-center">
+                            <span class="font-semibold text-warm-700 w-14">信箱：</span>
+                            <a href="mailto:blueandwind@hotmail.com" class="hover:text-warm-500 transition-colors">blueandwind@hotmail.com</a>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="font-semibold text-warm-700 w-14">手機：</span>
+                            <a href="tel:0921016090" class="hover:text-warm-500 transition-colors">0921-016090</a>
+                        </div>
+                        <div class="flex items-center sm:col-span-2">
+                            <span class="font-semibold text-warm-700 w-14 flex-shrink-0">通訊：</span>
+                            <span>台南市東區裕農路668巷32號</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 牧師履歷與見證 (Resume & Ministry Profile) -->
+    <section id="resume" class="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">牧師履歷與見證</h2>
+            <div class="w-24 h-1 bg-warm-500 mx-auto mt-4 rounded-full"></div>
+            <p class="mt-4 text-lg text-gray-500">學經歷背景、神學信仰告白與牧養事工實踐</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- 左側欄：學歷、牧會經歷、核心專長 -->
+            <div class="space-y-8">
+                <!-- 學歷背景 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-warm-100">
+                    <h3 class="text-lg font-bold text-warm-900 border-b border-warm-100 pb-3 mb-4 flex items-center">
+                        <span class="w-2 h-5 bg-warm-500 rounded-full mr-2.5"></span>學歷背景
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="font-bold text-gray-900">台灣神學研究學院 道碩班</div>
+                            <div class="text-sm text-warm-500 font-medium">2018 – 2021</div>
+                        </div>
+                        <div>
+                            <div class="font-bold text-gray-900">義守大學 資訊工程學系碩士班</div>
+                            <div class="text-sm text-warm-500 font-medium">2010 – 2012</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 牧會經歷 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-warm-100">
+                    <h3 class="text-lg font-bold text-warm-900 border-b border-warm-100 pb-3 mb-4 flex items-center">
+                        <span class="w-2 h-5 bg-warm-500 rounded-full mr-2.5"></span>牧會經歷
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="relative pl-4 border-l-2 border-warm-200">
+                            <div class="font-bold text-gray-900">台南後甲基督長老教會 教育牧師</div>
+                            <div class="text-sm text-warm-500 font-medium">2024 – 2026（現職）</div>
+                        </li>
+                        <li class="relative pl-4 border-l-2 border-warm-200">
+                            <div class="font-bold text-gray-900">台南後甲基督長老教會 傳道師</div>
+                            <div class="text-sm text-warm-500 font-medium">2021 – 2024</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 核心專長 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-warm-100">
+                    <h3 class="text-lg font-bold text-warm-900 border-b border-warm-100 pb-3 mb-4 flex items-center">
+                        <span class="w-2 h-5 bg-warm-500 rounded-full mr-2.5"></span>核心專長
+                    </h3>
+                    <div class="space-y-3.5 text-sm">
+                        <div>
+                            <div class="flex justify-between font-medium text-gray-700 mb-1"><span>講道與教導</span></div>
+                            <div class="w-full bg-warm-100 rounded-full h-2"><div class="bg-warm-700 h-2 rounded-full" style="width: 95%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between font-medium text-gray-700 mb-1"><span>教牧協談與諮商</span></div>
+                            <div class="w-full bg-warm-100 rounded-full h-2"><div class="bg-warm-700 h-2 rounded-full" style="width: 90%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between font-medium text-gray-700 mb-1"><span>教會領導與行政</span></div>
+                            <div class="w-full bg-warm-100 rounded-full h-2"><div class="bg-warm-700 h-2 rounded-full" style="width: 92%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between font-medium text-gray-700 mb-1"><span>跨世代溝通與整合</span></div>
+                            <div class="w-full bg-warm-100 rounded-full h-2"><div class="bg-warm-700 h-2 rounded-full" style="width: 95%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between font-medium text-gray-700 mb-1"><span>團隊建立與同工培訓</span></div>
+                            <div class="w-full bg-warm-100 rounded-full h-2"><div class="bg-warm-700 h-2 rounded-full" style="width: 92%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between font-medium text-gray-700 mb-1"><span>活動規劃與策略執行</span></div>
+                            <div class="w-full bg-warm-100 rounded-full h-2"><div class="bg-warm-700 h-2 rounded-full" style="width: 95%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between font-medium text-gray-700 mb-1"><span>牧區牧養與關懷</span></div>
+                            <div class="w-full bg-warm-100 rounded-full h-2"><div class="bg-warm-700 h-2 rounded-full" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右側兩欄：蒙召見證、信仰告白、牧養理念、事工經歷、專業技能與恩賜 -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- 蒙召見證 & 信仰告白 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-warm-100 space-y-6">
+                    <div>
+                        <h3 class="text-lg font-bold text-warm-900 mb-3 flex items-center">
+                            <span class="w-2 h-5 bg-warm-500 rounded-full mr-2.5"></span>蒙召見證
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            曾於職場歷練，具備紮實的邏輯與資訊背景。在尋求神的過程中，神讓我看見現代人在喧囂、碎片化資訊中所面臨的屬靈乾渴，以及新世代群體對真理的渴求。這份體會化為我心中強烈的負擔，漸漸經驗神要呼召我放下世俗的追求，並將祂所賜的恩賜全心奉獻於神國度的建造。因此我放下多年在科技業的工作，回應呼召進入神學院裝備，立志成為一個既能守住真理核心，又能用現代語言與世代對話的牧者。
+                        </p>
+                    </div>
+
+                    <div class="pt-6 border-t border-warm-100">
+                        <h3 class="text-lg font-bold text-warm-900 mb-3 flex items-center">
+                            <span class="w-2 h-5 bg-warm-500 rounded-full mr-2.5"></span>信仰告白
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            我持守正統福音派神學立場，確信聖經為神所默示、無誤的真理，是基督徒生活與信仰的最高準則。我相信三一上帝的真神，並深信因信稱義的救恩福音。在牧養實務上，我注重神學真理的落實、信徒靈命的深根建造，並強調教會應在當代社會中領受聖靈的恩賜與祝福、行出基督的教導與使命，活出上帝的愛與公義。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 牧養理念 & 事工經歷 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-warm-100">
+                        <h3 class="text-lg font-bold text-warm-900 border-b border-warm-100 pb-3 mb-4 flex items-center">
+                            <span class="w-2 h-5 bg-warm-500 rounded-full mr-2.5"></span>牧養理念
+                        </h3>
+                        <ul class="space-y-3 text-gray-600 text-sm md:text-base list-disc list-inside">
+                            <li>建立一個「信仰有根基、事奉有活力、福音有使命」的教會。</li>
+                            <li>有更多門徒可以成為教會文化、世代差異和社會的橋樑與媒介。</li>
+                            <li>信仰從「知識」轉化為「生活」；「理論」轉變為「實踐」。</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-warm-100">
+                        <h3 class="text-lg font-bold text-warm-900 border-b border-warm-100 pb-3 mb-4 flex items-center">
+                            <span class="w-2 h-5 bg-warm-500 rounded-full mr-2.5"></span>事工經歷
+                        </h3>
+                        <ul class="space-y-2.5 text-gray-600 text-sm md:text-base list-disc list-inside">
+                            <li>輔導與牧養青年事工、兒主事工、社青事工</li>
+                            <li>每年度舉辦與執行復活節與聖誕節大型親子活動</li>
+                            <li>客製化信仰與教育教材開發、門徒造就系統培育</li>
+                            <li>每年度主辦社青與學生讀經營會和暑期營會</li>
+                            <li>新媒體影音事工訓練與橋樑銜接</li>
+                            <li>擔任講座講師（團契、小組、教會、中會）</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 專業技能與恩賜 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-warm-100">
+                    <h3 class="text-lg font-bold text-warm-900 border-b border-warm-100 pb-3 mb-4 flex items-center">
+                        <span class="w-2 h-5 bg-warm-500 rounded-full mr-2.5"></span>專業技能與恩賜
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-warm-50/70 p-4 rounded-xl border border-warm-100">
+                            <div class="font-bold text-warm-900 mb-2">屬靈恩賜</div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                神學教育、門徒系統、組織團隊、專案規劃、行政領導、教會治理、信徒關懷
+                            </p>
+                        </div>
+                        <div class="bg-warm-50/70 p-4 rounded-xl border border-warm-100">
+                            <div class="font-bold text-warm-900 mb-2">實務技能</div>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                資訊與AI科技應用、文宣與教材設計、軟硬體實體整合
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,7 +281,7 @@
     </section>
 
     <!-- 文章與報導列表 (Articles & Reports) -->
-    <section id="articles" class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+    <section id="articles" class="py-16 bg-white px-4 sm:px-6 lg:px-8 mt-8">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">歷年文章與報導</h2>
@@ -139,7 +321,7 @@
         });
 
         // ==========================================
-        // 報導與專欄資料區塊 (請在這裡替換您的圖片與連結)
+        // 報導與專欄資料區塊 (保留您設定的所有圖片與連結)
         // ==========================================
         const articlesData = [
             {
@@ -147,8 +329,8 @@
                 category: "探索頻道",
                 title: "【探索頻道】從營會活動探討教會福音生態系",
                 description: "探討如何透過創新的營會活動設計，建立更具吸引力且生生不息的教會福音生態系...",
-                imageUrl: "https://tcnn.org.tw/wp-content/uploads/2026/11/3898-17-02.jpg", // <-- 請將引號內的網址替換為真實圖片連結
-                link: "https://tcnn.org.tw/archives/292178" // <-- 請將 # 替換為真實文章連結
+                imageUrl: "https://tcnn.org.tw/wp-content/uploads/2026/11/3898-17-02.jpg",
+                link: "https://tcnn.org.tw/archives/292178"
             },
             {
                 year: "2026",
