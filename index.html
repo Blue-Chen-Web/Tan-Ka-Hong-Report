@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陳嘉宏牧師 專欄與報導匯集</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    colors: {
+                        warm: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            500: '#8c6b5d',
+                            700: '#5a463d',
+                            900: '#3a2d27',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #fdf8f6; /* warm-50 */
+        }
+    </style>
+</head>
+<body class="text-gray-800 font-sans antialiased">
+
+    <!-- 導覽列 (Navbar) -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl font-bold text-warm-900 tracking-wider">
+                        陳嘉宏牧師 <span class="text-sm font-medium text-warm-500 ml-2">專欄與報導</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="text-gray-600 hover:text-warm-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">關於牧師</a>
+                        <a href="#articles" class="text-gray-600 hover:text-warm-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">文章與報導</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-warm-700 focus:outline-none p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-warm-700 hover:bg-warm-50">關於牧師</a>
+                <a href="#articles" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-warm-700 hover:bg-warm-50">文章與報導</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺與簡介 (Hero & About) -->
+    <section id="about" class="pt-28 pb-16 md:pt-36 md:pb-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-warm-100">
+            <div class="md:flex">
+                <div class="md:flex-shrink-0 bg-warm-100 md:w-1/3 flex items-center justify-center p-8">
+                    <!-- 使用圓形漸層作為頭像替代方案，維持溫暖專業感 -->
+                    <div class="w-40 h-40 rounded-full bg-gradient-to-br from-warm-500 to-warm-700 shadow-inner flex items-center justify-center text-white text-4xl font-bold">
+                        陳
+                    </div>
+                </div>
+                <div class="p-8 md:p-12 flex flex-col justify-center">
+                    <div class="uppercase tracking-wide text-sm text-warm-500 font-semibold mb-1">About</div>
+                    <h1 class="block mt-1 text-3xl leading-tight font-bold text-gray-900 mb-4">陳嘉宏 牧師</h1>
+                    <p class="mt-2 text-gray-600 text-lg leading-relaxed">
+                        具備資訊工程與軟體工程背景，致力於將新科技（如 AI 人工智慧）、數位工具與實體互動教具融入教會牧養與青年教育中。專長包含互動課程設計、營會活動規劃，以及運用科技進行信仰文化的詮釋與實踐。
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-sm font-medium bg-warm-50 text-warm-700 border border-warm-100">科技牧養</span>
+                        <span class="px-3 py-1 rounded-full text-sm font-medium bg-warm-50 text-warm-700 border border-warm-100">AI 人工智慧</span>
+                        <span class="px-3 py-1 rounded-full text-sm font-medium bg-warm-50 text-warm-700 border border-warm-100">互動課程設計</span>
+                        <span class="px-3 py-1 rounded-full text-sm font-medium bg-warm-50 text-warm-700 border border-warm-100">青年教育</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 文章與報導列表 (Articles & Reports) -->
+    <section id="articles" class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">歷年文章與報導</h2>
+                <div class="w-24 h-1 bg-warm-500 mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-lg text-gray-500">紀錄歷年在專欄探索與講座採訪的點滴足跡</p>
+            </div>
+
+            <!-- 卡片式網格佈局 (將由 JavaScript 動態生成) -->
+            <div id="articles-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 文章卡片會插入在這裡 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 (Footer) -->
+    <footer class="bg-warm-900 text-warm-50 py-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="text-xl font-bold tracking-wider">陳嘉宏牧師</span>
+                <p class="text-warm-100 text-sm mt-1">信仰實踐與科技牧養的探索之旅</p>
+            </div>
+            <div class="text-sm text-warm-100/70">
+                版權所有 © 2026 陳嘉宏。保留一切權利。
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle logic
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+
+        // ==========================================
+        // 報導與專欄資料區塊 (請在這裡替換您的圖片與連結)
+        // ==========================================
+        const articlesData = [
+            {
+                year: "2026",
+                category: "探索頻道",
+                title: "【探索頻道】從營會活動探討教會福音生態系",
+                description: "探討如何透過創新的營會活動設計，建立更具吸引力且生生不息的教會福音生態系...",
+                imageUrl: "https://placehold.co/600x400/eeeeee/999999?text=請填入圖片網址", // <-- 請將引號內的網址替換為真實圖片連結
+                link: "#" // <-- 請將 # 替換為真實文章連結
+            },
+            {
+                year: "2026",
+                category: "講座報導",
+                title: "【講座報導】南中訓練用AI設計主日學教材 指令精確度是關鍵",
+                description: "分享如何運用生成式 AI 輔助主日學教材的開發。強調精確的提示詞設計能大幅提升適切性。",
+                imageUrl: "https://placehold.co/600x400/eeeeee/999999?text=請填入圖片網址", 
+                link: "#" 
+            },
+            {
+                year: "2026",
+                category: "講座報導",
+                title: "【講座報導】南中大傳部辦AI講座 分享宣教應用",
+                description: "紀錄南中大傳部主辦的 AI 專題講座，深入探討人工智慧在當代教會宣教工作中的實際應用。",
+                imageUrl: "https://placehold.co/600x400/eeeeee/999999?text=請填入圖片網址",
+                link: "#"
+            },
+            {
+                year: "2026",
+                category: "探索頻道",
+                title: "【探索頻道】從動漫進入神學 一場文化詮釋學的實踐與紀要",
+                description: "以流行動漫文化為切入點，進行一場別開生面的神學反思，展現文化詮釋學的真實落地實踐。",
+                imageUrl: "https://placehold.co/600x400/eeeeee/999999?text=請填入圖片網址",
+                link: "#"
+            },
+            {
+                year: "2025",
+                category: "探索頻道",
+                title: "【探索頻道】牧養革命啟動，AI成為牧者的新助手",
+                description: "探討 AI 科技如何不僅僅是冰冷的工具，更能成為牧者在關懷與預備講章上的得力新助手。",
+                imageUrl: "https://placehold.co/600x400/eeeeee/999999?text=請填入圖片網址",
+                link: "#"
+            },
+            {
+                year: "2024",
+                category: "探索頻道",
+                title: "【探索頻道】起死回生，將垃圾化為藝術",
+                description: "結合環保議題與信仰中的「更新」意象，紀錄將廢棄物轉化為藝術創作的過程。",
+                imageUrl: "https://placehold.co/600x400/eeeeee/999999?text=請填入圖片網址",
+                link: "#"
+            },
+            {
+                year: "2023",
+                category: "講座報導",
+                title: "【講座報導】宣教變有趣 數位歷史導覽活化教會形象",
+                description: "介紹如何運用數位導覽技術，將生硬的教會歷史轉化為生動有趣的互動體驗。",
+                imageUrl: "https://placehold.co/600x400/eeeeee/999999?text=請填入圖片網址",
+                link: "#"
+            },
+            {
+                year: "2023",
+                category: "探索頻道",
+                title: "【探索頻道】科技執「法」——融合教會歷史、聖經與遊戲的整合性活動體驗",
+                description: "紀錄一場結合了教會歷史故事、聖經真理以及實境解謎遊戲的創新活動。",
+                imageUrl: "https://placehold.co/600x400/eeeeee/999999?text=請填入圖片網址",
+                link: "#"
+            },
+            {
+                year: "2022",
+                category: "採訪報導",
+                title: "【採訪報導】後甲教會暑期營會 陪伴孩子學會情緒停看聽",
+                description: "深入採訪後甲教會暑期營會，看見營會團隊用心陪伴兒童學習情緒管理與正向互動。",
+                imageUrl: "https://placehold.co/600x400/eeeeee/999999?text=請填入圖片網址",
+                link: "#"
+            },
+            {
+                year: "2022",
+                category: "專欄文章",
+                title: "相似卻又「不一樣」的聖誕節，回到初衷—愛、真實活出基督的樣式！",
+                description: "反思現代聖誕節的商業化，呼籲回歸信仰初衷，以真實的愛與行動活出溫暖氛圍。",
+                imageUrl: "https://placehold.co/600x400/eeeeee/999999?text=請填入圖片網址",
+                link: "#"
+            }
+        ];
+
+        // 決定標籤顏色的輔助函數
+        function getCategoryStyle(category) {
+            if (category.includes('探索頻道')) return 'text-blue-700 bg-blue-50';
+            if (category.includes('講座報導')) return 'text-green-700 bg-green-50';
+            if (category.includes('採訪報導')) return 'text-purple-700 bg-purple-50';
+            return 'text-orange-700 bg-orange-50';
+        }
+
+        // 動態渲染卡片到畫面上
+        function renderArticles() {
+            const container = document.getElementById('articles-container');
+            let htmlContent = '';
+
+            articlesData.forEach(article => {
+                htmlContent += `
+                <div class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden">
+                    <div class="relative w-full aspect-video overflow-hidden bg-gray-100">
+                        <img src="${article.imageUrl}" alt="${article.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-md text-xs font-bold text-warm-700 shadow-sm">
+                            ${article.year}
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="mb-3">
+                            <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider ${getCategoryStyle(article.category)} rounded-full">
+                                ${article.category}
+                            </span>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-warm-700 transition-colors line-clamp-2">${article.title}</h4>
+                        <p class="text-gray-500 text-sm mb-6 line-clamp-3 flex-grow">${article.description}</p>
+                        <a href="${article.link}" target="_blank" class="inline-flex items-center mt-auto text-sm font-medium text-warm-500 hover:text-warm-700 transition-colors w-fit">
+                            閱讀報導 <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                `;
+            });
+
+            container.innerHTML = htmlContent;
+        }
+
+        // 當網頁載入完成後執行渲染
+        document.addEventListener('DOMContentLoaded', renderArticles);
+    </script>
+</body>
+</html>
